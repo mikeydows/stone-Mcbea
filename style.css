@@ -223,6 +223,7 @@ header .navbar nav button{
 
 #cancel{
     display: none;
+    width: 30px;
 }
 
 .c-service .button img{
