@@ -134,7 +134,7 @@ header .navbar nav button{
     padding: 10px;
     border: 2px solid black;
     border-radius: 50px;
-    width: 140px;
+    width: 170px;
     font-size: 0.9em;
     margin-left: 20px;
     color: midnightblue;
@@ -214,7 +214,7 @@ header .navbar nav button{
     background-color: white;
     box-shadow: var(--shadow);
     position: fixed;
-    bottom: 100px;
+    bottom: 70px;
     right: 30px;
     display: flex;
     align-items: center;
@@ -235,7 +235,7 @@ header .navbar nav button{
     background-color: white;
     box-shadow: var(--shadow);
     padding: 25px;
-    bottom: 190px;
+    bottom: 160px;
     z-index: 111111;
     border-radius: 20px;
     right: 10px;
