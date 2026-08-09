@@ -80,10 +80,9 @@ header .navbar nav button{
     display: inline-block;
     width: 200px;
     background-color: white;
-     padding: 20px;
+     padding: 15px;
      margin-bottom: 10px;
      border-radius: 50px;
-     font-size: 1.2em;
     color: black;
     box-shadow: var(--shadow);
 }
