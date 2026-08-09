@@ -1,0 +1,302 @@
+:root{
+    --bg: rgb(229, 229, 250);
+    --linear: linear-gradient(to right, rgb(120, 6, 124), rgb(4, 6, 126));
+    --shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+}
+
+body{
+    background-color: var(--bg);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mobileHeader{
+    display: none;
+}
+
+
+@media (max-width: 700px) {
+    .mobileHeader{
+        display: block;
+    }
+
+    header .mobileHeader{
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+}
+
+header .navbar nav{
+    display: flex;
+    align-items: center;
+    width: 33%;
+    justify-content: space-between;
+}
+
+header .navbar nav button{
+    background-color: transparent;
+    border: 0;
+}
+
+.mainPage{
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.3), rgb(0, 0, 0)),
+    url("media/photo_1_2026-08-07_10-41-31.jpg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 0;
+}
+
+.mainPage .head{
+    margin-top: 50px;
+}
+
+.mainPage .head img{
+    filter: invert();
+    margin-top: 10px;
+}
+
+.mainPage .mid{
+    margin: 70px auto;
+    width: 90%;
+}
+
+.mainPage .midd a{
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+     padding: 20px;
+     margin-bottom: 10px;
+     border-radius: 50px;
+     font-size: 1.2em;
+    color: black;
+    box-shadow: var(--shadow);
+}
+
+.mainPage .midd a:last-child{
+    background: var(--linear);
+    color: white;
+}
+
+.mainPage .bottom{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: 50px auto 0 auto;
+}
+
+.sm-about{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    top: -15px;
+    padding: 50px 0;
+    z-index: -10;
+}
+
+
+.sm-about .td{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.sm-about .td a{
+    background: var(--linear);
+    color: white;
+    padding:20px;
+    text-decoration: none;
+    width: 200px;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 40px;
+}
+
+.sm-about .title h3{
+    opacity: 60%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 140px;
+    font-size: 0.9em;
+    margin-left: 20px;
+    color: midnightblue;
+}
+
+.sm-about .software{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5em;
+    margin: 50px auto;
+}
+
+.sm-about .software .one{
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.projects{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.projects .head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .head h4{
+    opacity: 60%;
+    border-radius: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    z-index: -111;
+}
+
+.projects .head a{
+    color: black;
+    text-decoration: none;
+}
+
+.projects .p-images{
+    width: 90%;
+    display: flex;
+    margin: 30px auto;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.projects .p-images img{
+    width: 46%;
+}
+
+.projects .detail{
+    margin: 50px auto;
+    width: 80%;
+}
+
+.projects .detail p{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.c-service{
+    position: fixed;
+}
+
+.c-service .button{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cancel{
+    display: none;
+}
+
+.c-service .button img{
+    width: 40px;
+}
+
+.c-service .contact{
+    width: 80%;
+    position: fixed;
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: 25px;
+    bottom: 190px;
+    z-index: 111111;
+    border-radius: 20px;
+    right: 10px;
+    display: none;
+    transition: 0.2s linear ease-in-out;
+}
+
+.c-service .contact p{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.c-service .contact a{
+    color: black;
+    font-size: 0.9em;
+}
+
+.c-service .contact img{
+    width: 15px;
+}
+
+.navPage{
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 60px;
+    z-index: 11111;
+    display: none;
+    transition: 0.2s linear ease-in-out;
+}
+
+.navPage img{
+    width: 17px;
+}
+
+.navPage a{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.navPage button{
+    width: 94%;
+    background: var(--bg);
+    text-align: left;
+    display: flex;
+    gap: 1.5em;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    align-items: center;
+}
+
+#close{
+    width: 25px;
+    display: none;
+}
+
+}
