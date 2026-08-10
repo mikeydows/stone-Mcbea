@@ -299,4 +299,135 @@ header .navbar nav button{
     display: none;
 }
 
+.servicePage{
+    margin: 50px auto;
+    width: 90%;
+}
+
+.servicePage .service{
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    gap: 2em;
+    overflow-x: scroll;
+    anchor-name: --carousel;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.servicePage .service::-webkit-scrollbar{
+    display: none;
+}
+
+.servicePage .service .head{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicePage .service .head img{
+    width: 30px;
+    transform: rotate(-45deg);
+    filter: invert()
+}
+
+.servicePage .service .head h4{
+    opacity: 80%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.servicePage .service .page, .page1, .page2, .page3{
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px auto;
+    height: 18em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-shrink: 0;
+    color: white;
+    scroll-snap-align: start;
+}
+
+.servicePage .service::scroll-button(left){
+    content: "←";
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    position-area: left bottom;
+    position: fixed;
+    position-anchor: --carousel;
+    transform: translate(29px, 40px);
+    z-index: -11;
+
+}
+
+.servicePage .service::scroll-button(right){
+    content: "→";
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    position-area: right bottom;
+    transform: translate(-38px, 40px);
+    position: fixed;
+    position-anchor: --carousel;
+    z-index: -11;
+}
+
+.servicePage .service::scroll-button(left):disable, .servicePage .service::scroll-button(right):disable{
+    opacity: 50%;
+    
+}
+
+.servicePage .service::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.page::scroll-marker, .page1::scroll-marker, .page2::scroll-marker, .page3::scroll-marker{
+    content: "";
+    height: .5em;
+    width: .5em;
+    background-color: rgb(144, 144, 245);
+    border-radius: 50%;
+}
+
+.page::scroll-marker:target-current, .page1::scroll-marker:target-current, .page2::scroll-marker:target-current, .page3::scroll-marker:target-current{
+    background-color: midnightblue;
+}
+
+.page{
+    background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.514), rgb(0, 0, 0)),
+    url("media/photo_9_2026-08-10_01-59-17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page2{
+    background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.514), rgb(0, 0, 0)),
+    url("media/photo_8_2026-08-10_01-59-17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page1{
+    background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.514), rgb(0, 0, 0)),
+    url("media/photo_12_2026-08-10_01-59-17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page3{
+    background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.514), rgb(0, 0, 0)),
+    url("media/photo_7_2026-08-10_01-59-17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 }
