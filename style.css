@@ -483,4 +483,10 @@ header .navbar nav button{
     font-size: 1.2em;
 }
 
+i{
+    text-align: center;
+    opacity: 50%;
+    font-size: 0.8em;
+}
+
 }
