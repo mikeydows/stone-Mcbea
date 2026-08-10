@@ -1,5 +1,5 @@
 :root{
-    --bg: rgb(229, 229, 250);
+    --bg: rgb(239, 239, 252);
     --linear: linear-gradient(to right, rgb(120, 6, 124), rgb(4, 6, 126));
     --shadow: 0 0 20px rgba(0, 0, 0, 0.171);
 }
@@ -428,6 +428,59 @@ header .navbar nav button{
     url("media/photo_7_2026-08-10_01-59-17.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.testimonials{
+    width: 100%;
+    margin: 50px auto;
+    background-color: white;
+}
+
+.testimonials .head{
+    width: 90%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials .head h3{
+    font-size: 1em;
+    padding: 10px;
+    opacity: 50%;
+    border-radius: 50px;
+    border: 2px solid black;   
+}
+
+.testimonials .head p{
+    font-size: .8em;
+    width: 40%;
+    text-align: right;
+}
+
+.testimonials .profiles{
+    background-color: var(--bg);
+    border-radius: 20px;
+    padding: 25px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.testimonials .profiles .h{
+    display: flex;
+    align-items:end;
+    gap: 1.3em;
+    margin-bottom: 20px;
+}
+
+.testimonials .profiles .h img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.testimonials .profiles .star p{
+    font-size: 1.2em;
 }
 
 }
