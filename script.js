@@ -37,3 +37,8 @@ function openContact(){
         cancel.style.display = "none";
     }
 }
+
+const addDate = document.getElementById("currentyear");
+const currentYear = new Date().getFullYear();
+
+addDate.textContent = currentYear+",";
