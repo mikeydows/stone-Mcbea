@@ -505,12 +505,12 @@ header .navbar nav button{
     font-size: 1.2em;
 }
 
-i{
+#i{
     text-align: center;
     opacity: 50%;
     font-size: 0.8em;
     margin:10px auto;
-    transform: translateX(50%);
+    font-style: italic;
 }
 
 .connect{
