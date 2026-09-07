@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone & Mcbea Creative</title>
+    <link rel="icon" href="icons/logoo.jpg">
+    <link rel="stylesheet" href="p_style.css">
+    <link rel="apple-touch-icon" href="icons/logoo.jpg" sizes="180x180">
+</head>
+<body>
+    <header>
+        <div class="mobileHeader">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="media/stonem.png" width="100px" alt="stone_&_mcbea_creative logo">
+                </div>
+
+                <nav>
+                    <a href="pricing.html"
+                    style="color: black;"
+                    >Pricing</a>
+                    <button id="navBtn" onclick="open_navbar()">
+                        <img src="icons/navbar.png" width="30px" alt="">
+                    </button>
+                    <img src="svgs/solid/x.svg" id="close" alt="">
+                </nav>
+            </div>
+        </div>
+
+        <div class="navPage">
+                <a href="portfolio.html">
+                    <img src="svgs/regular/folder.svg" alt=""> Portfolio
+                </a><br>
+                <a href="#service">
+                    <img src="svgs/solid/gear.svg" alt=""> Services
+                </a><br>
+                <a href="about.html">
+                    <img src="svgs/regular/user.svg" alt=""> About
+                </a><br>
+                <button onclick="openContact()">
+                    <img src="svgs/regular/envelope.svg" alt=""> Contact
+                </button>
+            </div>
+    </header>
+
+    <main>
+        <div class="c-service">
+                <div class="button" onclick="openContact()">
+                    <img id="c-icon" src="icons/customer service.png" alt="">
+                    <img src="svgs/solid/x.svg" alt="" id="cancel">
+                </div>
+
+                <div class="contact">
+                    <h4>Contacts</h4>
+                    <p>For faster response, you can reach us via...</p>
+                    <p>
+                        <img src="svgs/solid/phone.svg" alt="">
+                        <a href="tel:0509607547">0509607547</a> |  <a href="tel:0266607554">0266607554</a>
+                    </p>
+
+                    <p>
+                        <img src="svgs/brands/whatsapp.svg" alt="">
+                        <a href="https://wa.me/+233534289085">+233 53 428 9085</a> | <a href="https://wa.me/+2330266607554">+233 26 660 7554</a>
+                    </p>
+
+                    <p>
+                        <img src="svgs/regular/envelope.svg" alt="">
+                        <a href="mailto:stonemcbeacreative@gmail.com">stonemcbeacreative@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="portfolio">
+                <div class="p-head">
+
+                </div>
+            </div>
+
+            <div class="p-images">
+                <div class="images">
+                    <img loading="lazy" src="p-media/AFRI.jpg" alt="">
+                    <img loading="lazy" src="p-media/ayra.png" alt="">
+                    <img loading="lazy" src="p-media/hodia.jpg" alt="">
+                    <img loading="lazy" src="p-media/NAOMI.jpg" alt="">
+                    <img loading="lazy" src="p-media/yvonne.jpg" alt="">
+                    <img loading="lazy" src="p-media/riam.jpg" alt="">
+                    <img loading="lazy" src="p-media/shiloh.jpg" alt="">                                        
+                    <img loading="lazy" src="p-media/sypherfest.jpg" alt="">
+                    <img loading="lazy" src="p-media/soystic bott@1x_3.jpg" alt="">
+                    <img loading="lazy" src="p-media/SLICEBUX BAN.jpg" alt="">
+                    <img loading="lazy" src="p-media/asantewaa.jpg" alt="">
+                    <img loading="lazy" src="p-media/ENDURANCE.jpg" alt="">
+                </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="mobile-footer">
+            <div class="links">
+                <a href="portfolio.html">Portfolio</a>
+                <a href="#service">Service</a>
+                <a href="about.html">About</a>
+            </div>
+
+            <div class="copy">
+                <p>&copy<span id="currentyear"> </span> Stone & Mcbea Crreative, All rights reserved</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>

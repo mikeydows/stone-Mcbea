@@ -203,6 +203,7 @@ header .navbar nav button{
 
 .c-service{
     position: fixed;
+    z-index: 33333;
 }
 
 .c-service .button{
@@ -508,6 +509,8 @@ i{
     text-align: center;
     opacity: 50%;
     font-size: 0.8em;
+    margin:10px auto;
+    transform: translateX(50%);
 }
 
 .connect{
@@ -526,10 +529,12 @@ i{
 .connect .head h1{
     font-size: 2.4em;
     margin: 10px;
+    text-align: center;
 }
 
 .connect .head p{
     margin: 10px;
+    text-align: center;
 }
 
 .connect .links img{
