@@ -28,6 +28,16 @@ body{
     z-index: 1111;
 }
 
+.overlay{
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    height: 54em;
+    opacity: 0%;
+    display: none;
+    background-color: rgb(34, 33, 33);
+}
+
 header .navbar{
     display: flex;
     justify-content: space-between;
@@ -41,7 +51,7 @@ header .navbar nav{
     display: flex;
     align-items: center;
     width: 33%;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 header .navbar nav button{
@@ -107,6 +117,26 @@ header .navbar nav button{
     color: white;
 }
 
+.portfolio{
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.377), rgb(0, 0, 0)),
+     url("media/photo_8_2026-09-07_06-08-49.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 30em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio h1{
+    font-size: 3.5em;
+    margin: 0;
+}
+
 .c-service{
     position: fixed;
     z-index: 33333;
@@ -130,6 +160,49 @@ header .navbar nav button{
 #cancel{
     display: none;
     width: 20px;
+}
+
+.cate-page{
+    position: absolute;
+    background-color: rgb(104, 102, 102);
+    color: white;
+    width: 87%;
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
+    display: none;
+    margin-top: -20px;
+    z-index: 1111;
+}
+
+.category .button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.category .button p{
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.category .button #icon{
+    font-weight: bold;
+    font-size: 2em;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+}
+
+.cate-page p{
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: rgba(31, 30, 30, 0.253);
+    cursor: pointer;
 }
 
 .c-service .button img{
@@ -178,7 +251,7 @@ header .navbar nav button{
 }
 
 .p-images .images img{
-    width: 160px;
+    width: 180px;
     border-radius: 20px;
     box-shadow: var(--shadow);
 }

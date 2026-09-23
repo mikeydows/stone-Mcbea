@@ -17,10 +17,7 @@
                 </div>
 
                 <nav>
-                    <a href="pricing.html"
-                    style="color: black;"
-                    >Pricing</a>
-                    <button id="navBtn" onclick="open_navbar()">
+                    <button title="Navbar" id="navBtn" onclick="open_navbar()">
                         <img src="icons/navbar.png" width="30px" alt="">
                     </button>
                     <img src="svgs/solid/x.svg" id="close" alt="">
@@ -29,11 +26,8 @@
         </div>
 
         <div class="navPage">
-                <a href="portfolio.html">
-                    <img src="svgs/regular/folder.svg" alt=""> Portfolio
-                </a><br>
-                <a href="#service">
-                    <img src="svgs/solid/gear.svg" alt=""> Services
+                <a href="index.html">
+                    <img src="svgs/solid/home.svg" alt=""> Home
                 </a><br>
                 <a href="about.html">
                     <img src="svgs/regular/user.svg" alt=""> About
@@ -45,10 +39,12 @@
     </header>
 
     <main>
+        <div class="overlay"></div>
+
         <div class="c-service">
                 <div class="button" onclick="openContact()">
                     <img id="c-icon" src="icons/customer service.png" alt="">
-                    <img src="svgs/solid/x.svg" alt="" id="cancel">
+                    <img onclick="hideContact()" src="svgs/solid/x.svg" alt="" id="cancel">
                 </div>
 
                 <div class="contact">
@@ -73,7 +69,24 @@
 
             <div class="portfolio">
                 <div class="p-head">
+                    <h1>Our Porfolio</h1>
+                    <h3>View Our Works below</h3>
 
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="button">
+                    <p id="page">Graphic Design Portfoilo</p><span id="icon"> > </span>
+                </div>
+
+                <div class="cate-page">
+                    <h3>Select any category</h3>
+                    <p id="graphic">Graphic Design</p>
+                    <p id="web">Web Design</p>
+                    <p id="edit">Video Editing</p>
+                    <p id="video">Videography</p>
+                    <p id="photo">Photography</p>
                 </div>
             </div>
 
@@ -91,6 +104,16 @@
                     <img loading="lazy" src="p-media/SLICEBUX BAN.jpg" alt="">
                     <img loading="lazy" src="p-media/asantewaa.jpg" alt="">
                     <img loading="lazy" src="p-media/ENDURANCE.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_1_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_2_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_3_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_4_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_5_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_7_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_6_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/d fghjk.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_8_2026-09-08_06-29-18.jpg" alt="">
+                    <img loading="lazy" src="p-media/photo_9_2026-09-08_06-29-18.jpg" alt="">
                 </div>
             </div>
     </main>
@@ -98,7 +121,7 @@
     <footer>
         <div class="mobile-footer">
             <div class="links">
-                <a href="portfolio.html">Portfolio</a>
+                <a href="index.html">Home</a>
                 <a href="#service">Service</a>
                 <a href="about.html">About</a>
             </div>
