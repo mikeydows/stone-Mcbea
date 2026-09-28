@@ -85,7 +85,7 @@ function openCategory(){
         category.style.display = "block";
         icon.style.transform = "rotate(270deg)";
         overlay.style.display = "block";
-    }else{
+    } else {
         return closeCategory();
     }
 }
@@ -93,51 +93,32 @@ function openCategory(){
 function closeCategory(){
     category.style.display = "none";
     icon.style.transform = "rotate(90deg)";
+    overlay.style.display = "none";
 }
 
 page.addEventListener("click", openCategory)
+
 graphic.addEventListener("click", ()=>{
     page.textContent = "Graphic Design Portfolio";
     closeCategory();
-    graphic_design.style.display = "block";
-    web_design.style.display = "none";
-    videography.style.display = "none";
-    video_edit.style.display = "none";
-    photography.style.display = "none";
 })
+
 web.addEventListener("click", ()=>{
     closeCategory();
     page.textContent = "Web Design Portfolio";
-    graphic_design.style.display = "none";
-    web_design.style.display = "block";
-    videography.style.display = "none";
-    video_edit.style.display = "none";
-    photography.style.display = "none";
 })
+
 edit.addEventListener("click", ()=>{
     page.textContent = "Video Editing Portfolio";
-    return closeCategory();
-    graphic_design.style.display = "none";
-    web_design.style.display = "none";
-    videography.style.display = "none";
-    video_edit.style.display = "block";
-    photography.style.display = "none";
+    closeCategory();
 })
+
 video.addEventListener("click", ()=>{
     page.textContent = "Videography Portfolio";
     closeCategory();
-    graphic_design.style.display = "none";
-    web_design.style.display = "none";
-    videography.style.display = "block";
-    video_edit.style.display = "none";
-    photography.style.display = "none";
 })
+
 photo.addEventListener("click", ()=>{
     page.textContent = "Photography Portfolio";
     closeCategory();
-    graphic_design.style.display = "none";
-    web_design.style.display = "none";
-    videography.style.display = "none";
-    video_edit.style.display = "none";
-    photography.style.display = "block";
 })

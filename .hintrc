@@ -9,7 +9,8 @@
       {
         "ignore": [
           "anchor-name",
-          "position-anchor"
+          "position-anchor",
+          "backdrop-filter"
         ]
       }
     ]
