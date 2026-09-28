@@ -50,6 +50,18 @@ header .navbar nav button{
     border: 0;
 }
 
+@keyframes appear {
+    from{
+        opacity: 0%;
+        transform: translateY(10em);
+    }
+
+    to{
+        opacity: 100%;
+        transform: translateY(0em);
+    }
+}
+
 .mainPage{
     text-align: center;
     background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.3), rgb(0, 0, 0)),
@@ -63,6 +75,9 @@ header .navbar nav button{
 
 .mainPage .head{
     margin-top: 50px;
+    opacity: 0%;
+    transform: translateY(10em);
+    animation: appear 1s ease-in-out 0.3s forwards;
 }
 
 .mainPage .head img{
@@ -73,6 +88,9 @@ header .navbar nav button{
 .mainPage .mid{
     margin: 70px auto;
     width: 90%;
+    opacity: 0%;
+    transform: translateY(10em);
+    animation: appear 1s ease-in-out 0.5s forwards;
 }
 
 .mainPage .midd a{
@@ -85,10 +103,13 @@ header .navbar nav button{
      border-radius: 50px;
     color: black;
     box-shadow: var(--shadow);
+    animation: appear 1s ease-in-out 0.7s forwards;
+    opacity: 0%;
+    transform: translateY(10em);
 }
 
 .mainPage .midd a:last-child{
-    background: var(--linear);
+    background: rgb(4, 6, 126);
     color: white;
 }
 
@@ -97,6 +118,9 @@ header .navbar nav button{
     width: 90%;
     justify-content: space-between;
     margin: 50px auto 0 auto;
+    animation: appear 1s ease-in-out 0.9s forwards;
+    opacity: 0%;
+    transform: translateY(10em);
 }
 
 .sm-about{
@@ -118,7 +142,7 @@ header .navbar nav button{
 }
 
 .sm-about .td a{
-    background: var(--linear);
+    background: rgb(4, 6, 126);
     color: white;
     padding:20px;
     text-decoration: none;

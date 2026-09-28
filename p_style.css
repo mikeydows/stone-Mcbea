@@ -184,7 +184,7 @@ header .navbar nav button{
     display: flex;
     align-items: center;
     gap: 1em;
-    width: 80%;
+    width: 90%;
     margin-bottom: 50px;
 }
 
@@ -259,7 +259,7 @@ header .navbar nav button{
 }
 
 .p-images .images img{
-    width: 180px;
+    width: 160px;
     border-radius: 20px;
     box-shadow: var(--shadow);
 }
