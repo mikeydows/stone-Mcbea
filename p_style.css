@@ -117,6 +117,18 @@ header .navbar nav button{
     color: white;
 }
 
+@keyframes appear {
+    from{
+        opacity: 0%;
+        transform: translateY(10em);
+    }
+
+    to{
+        opacity: 100%;
+        transform: translateY(0em);
+    }
+}
+
 .portfolio{
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.377), rgb(0, 0, 0)),
@@ -133,8 +145,17 @@ header .navbar nav button{
 }
 
 .portfolio h1{
-    font-size: 3.5em;
+    font-size: 4.5em;
     margin: 0;
+    animation: appear 1s ease-in-out 0.2s forwards;
+    opacity: 0%;
+    transform: translateY(10em);
+}
+
+.portfolio h3{
+    animation: appear 1s ease-in-out 0.7s forwards;
+    opacity: 0%;
+    transform: translateY(10em);
 }
 
 .c-service{
@@ -192,11 +213,13 @@ header .navbar nav button{
     margin: 5px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.8em;
     border-radius: 50px;
-    padding: 20px 15px;
+    padding: 15px 10px;
     border: 1px solid black;
-    width: 70%;
+    width: 57%;
+    color: black;
+    background-color: aliceblue;
 }
 
 .category .button #icon{
