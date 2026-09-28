@@ -33,7 +33,7 @@ body{
     overflow: hidden;
     position: fixed;
     height: 54em;
-    opacity: 0%;
+    opacity: 20%;
     display: none;
     background-color: rgb(34, 33, 33);
 }

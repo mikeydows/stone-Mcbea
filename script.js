@@ -77,7 +77,6 @@ const video = document.getElementById("video");
 const photo = document.getElementById("photo");
 const page = document.getElementById("page");
 const icon = document.getElementById("icon");
-const cate_button = document.querySelector(".button");
 const category = document.querySelector(".cate-page")
 
 function openCategory(){
