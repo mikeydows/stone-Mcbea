@@ -3,6 +3,16 @@ const nav_page = document.querySelector(".navPage");
 const navBtn = document.getElementById("navBtn");
 const overlay = document.querySelector(".overlay");
 
+const loading = document.querySelector(".loading");
+loading.style.background= "white";
+
+loading.addEventListener("animationend",()=>{
+    document.querySelector(".head").style.animationPlayState = "running";
+    document.querySelector(".bottom").style.animationPlayState = "running";
+    document.querySelector(".mid").style.animationPlayState = "running";
+    document.querySelector(".midd").style.animation = "appear 1s ease-in-out 0.9s forwards";
+})
+
 function open_navbar(){
     if(window.getComputedStyle(nav_page).display === "none"){
         nav_page.style.display = "block";
@@ -63,6 +73,7 @@ const addDate = document.getElementById("currentyear");
 const currentYear = new Date().getFullYear();
 
 addDate.textContent = currentYear+",";
+
 
 //portfolio js
 const graphic_design = document.querySelector(".images");

@@ -62,6 +62,32 @@ header .navbar nav button{
     }
 }
 
+@keyframes disappear {
+    100%{
+        opacity: 100%;
+    }
+    10%{
+        opacity: 10%;
+    }
+    0%{
+        opacity: 0%;
+    }
+}
+
+video{
+    width: 100%;
+    z-index: 2222222;
+    position: fixed;
+}
+
+.loading{
+    width: 100%;
+    z-index: 333333;
+    height: 50em;
+    position: fixed;
+    animation: disappear 6s ease-in-out 0.6s forwards;
+}
+
 .mainPage{
     text-align: center;
     background-image: linear-gradient(to bottom, rgba(7, 7, 7, 0.3), rgb(0, 0, 0)),
@@ -77,7 +103,7 @@ header .navbar nav button{
     margin-top: 50px;
     opacity: 0%;
     transform: translateY(10em);
-    animation: appear 1s ease-in-out 0.3s forwards;
+    animation: appear 1s ease-in-out 0.5s forwards paused;
 }
 
 .mainPage .head img{
@@ -90,7 +116,7 @@ header .navbar nav button{
     width: 90%;
     opacity: 0%;
     transform: translateY(10em);
-    animation: appear 1s ease-in-out 0.5s forwards;
+    animation: appear 1s ease-in-out 0.7s forwards paused;
 }
 
 .mainPage .midd a{
@@ -103,9 +129,6 @@ header .navbar nav button{
      border-radius: 50px;
     color: black;
     box-shadow: var(--shadow);
-    animation: appear 1s ease-in-out 0.7s forwards;
-    opacity: 0%;
-    transform: translateY(10em);
 }
 
 .mainPage .midd a:last-child{
@@ -113,12 +136,17 @@ header .navbar nav button{
     color: white;
 }
 
+.midd{
+    opacity: 0%;
+    transform: translateY(10em);
+}
+
 .mainPage .bottom{
     display: flex;
     width: 90%;
     justify-content: space-between;
     margin: 50px auto 0 auto;
-    animation: appear 1s ease-in-out 0.9s forwards;
+    animation: appear 1s ease-in-out 0.11s forwards paused;
     opacity: 0%;
     transform: translateY(10em);
 }
