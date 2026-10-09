@@ -3,16 +3,6 @@ const nav_page = document.querySelector(".navPage");
 const navBtn = document.getElementById("navBtn");
 const overlay = document.querySelector(".overlay");
 
-const loading = document.querySelector(".loading");
-loading.style.background= "white";
-
-loading.addEventListener("animationend",()=>{
-    document.querySelector(".head").style.animationPlayState = "running";
-    document.querySelector(".bottom").style.animationPlayState = "running";
-    document.querySelector(".mid").style.animationPlayState = "running";
-    document.querySelector(".midd").style.animation = "appear 1s ease-in-out 0.9s forwards";
-})
-
 function open_navbar(){
     if(window.getComputedStyle(nav_page).display === "none"){
         nav_page.style.display = "block";
@@ -42,26 +32,20 @@ const cancel = document.getElementById("cancel");
 function openContact(){
     if(window.getComputedStyle(contact_page).display === "none"){
         contact_page.style.display = "block";
-        c_icon.style.display = "none";
-        cancel.style.display = "block";
-        nav_page.style.display = "none";
-        closeBtn.style.display = "none";
-        navBtn.style.display = "block";
-        overlay.style.display = "block";
-        closeCategory();
-
+        hide_navbar();
+    }
+    else{
+        return closeContact();
     }
 }
 
 function closeContact(){
     contact_page.style.display = "none";
-    c_icon.style.display = "block";
-    cancel.style.display = "none";
-    overlay.style.display = "none";
 }
 
 overlay.addEventListener("click", ()=>{
     closeCategory();
+    
     if(contact_page.style.display === "block"){
         return closeContact();
     }else if(nav_page.style.display === "block"){
