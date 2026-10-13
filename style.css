@@ -2,6 +2,9 @@
     --bg: rgb(239, 239, 252);
     --linear: linear-gradient(to right, rgb(120, 6, 124), rgb(4, 6, 126));
     --shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+    --bg: #ffffff;  --fg: #000000;      
+    --bg-end: #000000; --fg-end: #ffffff;
+    --size: clamp(26px, 6.2vw, 64px);    
 }
 
 body{

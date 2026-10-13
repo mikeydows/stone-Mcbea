@@ -116,3 +116,4 @@ photo.addEventListener("click", ()=>{
     page.textContent = "Photography Portfolio";
     closeCategory();
 })
+
