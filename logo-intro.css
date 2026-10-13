@@ -1,0 +1,53 @@
+/* ==========================================================
+   LOGO INTRO  (logo-intro.css)
+   Everything is prefixed "si-" so it can't clash with your styles.
+   Colours / size: edit the --si-* variables below.
+   ========================================================== */
+:root {
+  --si-bg: #ffffff;        /* intro start background */
+  --si-fg: #000000;        /* intro start logo colour */
+  --si-bg-end: #000000;    /* after the colour flip */
+  --si-fg-end: #ffffff;
+  --si-size: clamp(26px, 6.2vw, 64px);   /* master size of the intro logo */
+}
+
+.si-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;                    /* above everything on the page */
+  display: grid;
+  place-items: center;
+  background: var(--si-bg);
+  color: var(--si-fg);
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color .5s ease, color .5s ease;
+  /* Safety net: if the script ever fails to load, the overlay removes itself */
+  animation: si-failsafe .01s linear 9s forwards;
+}
+.si-overlay.si-inverted { background: var(--si-bg-end); color: var(--si-fg-end); }
+
+@keyframes si-failsafe { to { opacity: 0; visibility: hidden; pointer-events: none; } }
+
+.si-logo {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center;
+  font-family: "Montserrat", "Poppins", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  font-size: var(--si-size);
+  line-height: 1;
+  opacity: 0;                             /* shown by JS once measured */
+}
+.si-logo.si-ready { opacity: 1; }
+
+.si-mark-box { position: relative; display: block; }
+.si-mark { display: block; height: 2.35em; width: auto; overflow: visible; fill: currentColor; }
+
+.si-lines { margin-top: 1.25em; display: flex; flex-direction: column; align-items: center; }
+.si-mask { overflow: hidden; padding: .08em 0; }
+.si-l1 { display: block; font-weight: 800; letter-spacing: .005em; white-space: nowrap; text-transform: uppercase; }
+.si-l2 { display: block; font-weight: 400; white-space: nowrap; text-transform: uppercase; margin-top: .5em; }
+
+/* While the intro plays: lock scrolling and hold the page's own entrance
+   animations so they play as the intro lifts instead of behind it. */
+html.si-playing, html.si-playing body { overflow: hidden; }
+html.si-playing :is(header, main, footer) * { animation-play-state: paused !important; }
